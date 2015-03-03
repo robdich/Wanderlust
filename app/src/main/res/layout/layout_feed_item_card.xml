@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    card:cardUseCompatPadding="true"
+    card:elevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/feed_item_header_layout"
+            android:id="@+id/feed_item_header"/>
+
+        <TextView
+            android:id="@+id/feed_item_status"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="This is a very long text. Something about what's happening in my life. Just kidding. I have no life."
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_marginBottom="8dp"
+            style="@style/TextBody"/>
+
+        <ImageView
+            android:id="@+id/feed_item_photo"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:src="@drawable/bg_bridge"
+            android:scaleType="centerCrop"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:divider="?android:attr/dividerHorizontal"
+            android:showDividers="middle">
+
+            <Button
+                android:id="@+id/feed_button_like"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/button_like"
+                style="@style/BorderlessButton"/>
+
+            <Button
+                android:id="@+id/feed_button_comment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/button_comment"
+                style="@style/BorderlessButton"/>
+
+            <Button
+                android:id="@+id/feed_button_share"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/button_share"
+                style="@style/BorderlessButton"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</android.support.v7.widget.CardView>

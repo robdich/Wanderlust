@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <integer name="profile_image_base_width">3</integer>
+    <integer name="profile_image_base_height">2</integer>
+    
+    <integer name="nav_profile_image_base_width">16</integer>
+    <integer name="nav_profile_image_base_height">9</integer>
+    
+    <integer name="group_gridview_columns">1</integer>
+    
+</resources>

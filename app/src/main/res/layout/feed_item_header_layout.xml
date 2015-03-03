@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/feed_item_header_padding">
+
+    <com.robdich.wanderlust.view.ShapeImageView
+        android:id="@+id/feed_item_avatar"
+        android:layout_width="@dimen/feed_item_avatar_size"
+        android:layout_height="@dimen/feed_item_avatar_size"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="@dimen/feed_item_avatar_right_margin"
+        android:src="@drawable/photo_rob"/>
+
+    <TextView
+        android:id="@+id/feed_item_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/feed_item_avatar"
+        android:layout_marginBottom="@dimen/feed_item_username_bottom_margin"
+        android:text="@string/placeholder_profile_username"
+        style="@style/TextHeader"/>
+
+    <TextView
+        android:id="@+id/feed_item_header_text_likes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/feed_item_avatar"
+        android:layout_below="@+id/feed_item_username"
+        android:text="@string/placeholder_text_likes"
+        android:drawableLeft="@drawable/ic_favorite"
+        android:drawablePadding="@dimen/drawable_padding"
+        android:minWidth="@dimen/feed_item_likes_width"
+        style="@style/TextCaption"/>
+
+    <TextView
+        android:id="@+id/feed_item_header_text_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/feed_item_header_text_likes"
+        android:layout_toRightOf="@+id/feed_item_header_text_likes"
+        android:text="@string/placeholder_text_location"
+        android:drawableLeft="@drawable/ic_location"
+        android:drawablePadding="@dimen/drawable_padding"
+        android:minWidth="@dimen/feed_item_location_width"
+        style="@style/TextCaption"/>
+
+    <TextView
+        android:id="@+id/feed_item_header_text_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/feed_item_header_text_likes"
+        android:layout_toRightOf="@+id/feed_item_header_text_location"
+        android:text="@string/placeholder_text_time"
+        android:drawableLeft="@drawable/ic_time"
+        android:drawablePadding="@dimen/drawable_padding"
+        android:minWidth="@dimen/feed_item_location_width"
+        style="@style/TextCaption"/>
+
+
+</RelativeLayout>

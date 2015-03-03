@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="background_white">#ffffff</color>
+    
+    <color name="theme_color">#5677fc</color>
+    <color name="theme_darker_color">#4f6bf0</color>
+    <color name="theme_accent_color">#ffffff</color>
+    
+    <!-- Black 87% -->
+    <color name="primary_text_default_material_light">#de000000</color>
+    <!-- Black 54% -->
+    <color name="secondary_text_material_light">#8a000000</color>
+    <!-- Black 54% (TODO: same as secondary?) -->
+    <color name="tertiary_text_material_light">#8a000000</color>
+
+    <!-- White 87% -->
+    <color name="primary_text_default_material_dark">#deffffff</color>
+    <!-- White 38% -->
+    <color name="secondary_text_material_dark">#61ffffff</color>
+    <!-- White 38% (TODO: same as secondary?) -->
+    <color name="tertiary_text_material_dark">#61ffffff</color>
+    
+    <color name="text_primary">@color/primary_text_default_material_light</color>
+    <color name="text_secondary">@color/secondary_text_material_light</color>
+    <color name="text_tertiary">@color/tertiary_text_material_light</color>
+    <color name="text_disabled">#44000000</color>
+
+    <color name="text_primary_inverse">@color/primary_text_default_material_dark</color>
+    <color name="text_secondary_inverse">@color/secondary_text_material_dark</color>
+    <color name="text_tertiary_inverse">@color/tertiary_text_material_dark</color>
+    
+    <color name="text_regular">@color/primary_text_default_material_light</color>
+    <color name="text_display">@color/secondary_text_material_light</color>
+    <color name="text_caption">@color/tertiary_text_material_light</color>
+    
+    <color name="text_regular_dark">@color/primary_text_default_material_dark</color>
+    <color name="text_display_dark">@color/secondary_text_material_dark</color>
+    <color name="text_caption_dark">@color/tertiary_text_material_dark</color>
+
+    <color name="tab_background">@color/theme_color</color>
+    <color name="tab_selected_strip">@color/theme_accent_color</color>
+
+    <!--70% black -->
+    <color name="text_dark_gray">#b3000000</color>
+    <!--45% black -->
+    <color name="text_light_gray">#73000000</color>
+
+    <color name="navdrawer_background">#ffffffff</color>
+    <color name="divider_color">#e0e0e0</color>
+    <color name="image_tint">#6000</color>
+
+    <color name="gallery_settings_theme_dark">#00796B</color>
+    <color name="gallery_settings_theme">#009688</color>
+    <color name="gallery_settings_theme_light">#4DB6AC</color>
+    <color name="gallery_settings_empty_state_dark">@color/gallery_settings_theme_dark</color>
+    <color name="gallery_settings_empty_state_light">@color/gallery_settings_theme_light</color>
+        
+</resources>

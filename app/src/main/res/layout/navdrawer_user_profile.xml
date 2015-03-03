@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:auto="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?android:selectableItemBackground" >
+
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    
+        <com.robdich.wanderlust.view.AutoSizeImageView
+            android:id="@+id/nav_profle_image"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/photo_rob"
+            android:tint="@color/image_tint"
+            auto:base_width="@integer/nav_profile_image_base_width"
+            auto:base_height="@integer/nav_profile_image_base_height" />
+        
+        <com.robdich.wanderlust.view.ShapeImageView
+            android:id="@+id/nav_avatar"
+            android:layout_width="@dimen/profile_avatar_size"
+            android:layout_height="@dimen/profile_avatar_size"
+            android:layout_marginTop="@dimen/nav_avatar_margin_top"
+            android:layout_marginLeft="@dimen/nav_avatar_margin_left"
+            android:src="@drawable/photo_rob" />
+    
+        <TextView
+            android:id="@+id/nav_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/nav_profle_image"
+            android:layout_marginLeft="@dimen/nav_email_margin_left"
+            android:layout_marginBottom="@dimen/nav_email_margin_bottom"
+            android:text="@string/placeholder_nav_email"
+            style="@style/NavDrawer.Text.Email" />
+    
+    </RelativeLayout>
+
+</FrameLayout>

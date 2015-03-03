@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Wanderlust</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    
+    <string name="activity_home">Activity</string>
+    <string name="activity_feed">Feed</string>
+    
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    
+    <string name="placeholder_nav_email">johnrobert.dichoso@gmail.com</string>
+    <string name="placeholder_nav_item">Nav Item</string>
+    <string name="placeholder_profile_username">Robert Dichoso</string>
+    <string name="placeholder_text_likes">16</string>
+    <string name="placeholder_text_location">Manila, PH</string>
+    <string name="placeholder_text_time">30 min ago</string>
+
+    <string name="placeholder_notification_detail">Robert Dichoso commented on your photo The Great Escape</string>
+
+    <string name="placeholder_invite_detail">Robert Dichoso invited you to Summer Camp</string>
+
+    <string name="button_like">Like</string>
+    <string name="button_comment">Comment</string>
+    <string name="button_share">Share</string>
+
+    <string name="username_sheldon">Sheldon Cooper</string>
+    <string name="username_dave">Dave Grohl</string>
+    <string name="username_natasha">Natasha Romanov</string>
+    <string name="username_gwen">Gwen Stacy</string>
+    <string name="username_daft">Daft Punk</string>
+
+    <string-array name="statuses">
+        <item>Two roads diverged in a wood, and I— I took the one less traveled by.</item>
+        <item>If you feel just like a tourist, in a city you were born, it\'s time to go.</item>
+        <item>What is essential is invisible to the eye.</item>
+        <item>Around the world, around the world... Around the world, around the world...</item>
+        <item>I am the master of my fate, I am the captain of my soul.</item>
+    </string-array>
+
+
+</resources>
