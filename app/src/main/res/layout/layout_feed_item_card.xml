@@ -8,14 +8,12 @@
     android:layout_height="wrap_content"
     android:clickable="true"
     android:foreground="?android:attr/selectableItemBackground"
-    android:paddingTop="8dp"
-    android:paddingBottom="8dp"
     card:cardUseCompatPadding="true"
     card:elevation="4dp">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="440dp"
         android:orientation="vertical">
 
         <include
@@ -24,8 +22,8 @@
 
         <TextView
             android:id="@+id/feed_item_status"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:text="This is a very long text. Something about what's happening in my life. Just kidding. I have no life."
             android:paddingTop="8dp"
             android:paddingBottom="8dp"
@@ -37,7 +35,8 @@
         <ImageView
             android:id="@+id/feed_item_photo"
             android:layout_width="match_parent"
-            android:layout_height="240dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
             android:src="@drawable/bg_bridge"
             android:scaleType="centerCrop"/>
 

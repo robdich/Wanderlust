@@ -1,0 +1,9 @@
+<resources>
+
+    <dimen name="notifications_horizontal_padding">64dp</dimen>
+    <dimen name="notifications_vertical_padding">16dp</dimen>
+
+    <dimen name="invites_horizontal_padding">64dp</dimen>
+    <dimen name="invites_vertical_padding">16dp</dimen>
+
+</resources>

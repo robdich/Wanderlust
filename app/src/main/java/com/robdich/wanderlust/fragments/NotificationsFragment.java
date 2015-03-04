@@ -89,7 +89,7 @@ public class NotificationsFragment extends Fragment{
         notification.time = "4 min ago";
         notification.setCommentPost("The Greatest Escape. Ever.",
                 "That is indeed the greatest. Ever.",
-                R.drawable.image_boats);
+                R.drawable.image_beach);
         notificationItems.add(notification);
 
         notification = new NotificationItem();
@@ -128,9 +128,9 @@ public class NotificationsFragment extends Fragment{
         notificationItems.add(notification);
 
         notification = new NotificationItem();
-        notification.user = new UserProfile(getResources().getString(R.string.username_gwen),
-                UserProfile.Gender.Female,
-                R.drawable.photo_gwen);
+        notification.user = new UserProfile(getResources().getString(R.string.username_dave),
+                UserProfile.Gender.Male,
+                R.drawable.photo_dave);
         notification.likesCount = 31;
         notification.time = "6 hr ago";
         notification.setAlbumPost("Travel",
@@ -152,6 +152,30 @@ public class NotificationsFragment extends Fragment{
                         getResources().getString(R.string.username_gwen),
                         UserProfile.Gender.Female,
                         R.drawable.photo_gwen));
+        notificationItems.add(notification);
+
+        notification = new NotificationItem();
+        notification.user = new UserProfile(getResources().getString(R.string.username_natasha),
+                UserProfile.Gender.Female,
+                R.drawable.photo_natasha);
+        notification.likesCount = 25;
+        notification.time = "1 day ago";
+        notification.setCommentPost("Echoes of Tokyo",
+                "Everything is Awesome.",
+                R.drawable.image_tokyo);
+        notificationItems.add(notification);
+
+        notification = new NotificationItem();
+        notification.user = new UserProfile(getResources().getString(R.string.username_daft),
+                UserProfile.Gender.Male,
+                R.drawable.photo_daft);
+        notification.likesCount = 0;
+        notification.time = "3 days ago";
+        notification.setAddedFriend(
+                new UserProfile(
+                        getResources().getString(R.string.username_natasha),
+                        UserProfile.Gender.Female,
+                        R.drawable.photo_natasha));
         notificationItems.add(notification);
 
         return notificationItems;

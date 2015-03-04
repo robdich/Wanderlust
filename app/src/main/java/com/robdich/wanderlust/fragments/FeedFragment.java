@@ -3,8 +3,7 @@ package com.robdich.wanderlust.fragments;
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.GridLayoutManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -25,7 +24,7 @@ import java.util.List;
 public class FeedFragment extends Fragment{
 
     private ObserveableRecyclerView mRrecyclerView;
-    private RecyclerView.LayoutManager mLayoutManager;
+    private GridLayoutManager mLayoutManager;
     private FeedAdapter mFeedAdapter;
 
     private IScrollObserver mScrollObserver;
@@ -51,7 +50,10 @@ public class FeedFragment extends Fragment{
         super.onViewCreated(view, savedInstanceState);
 
         //        recyclerView.setHasFixedSize(true);
-        mLayoutManager = new LinearLayoutManager(getActivity());
+
+        int columns = getActivity().getResources().getInteger(R.integer.feed_grid_columns);
+
+        mLayoutManager = new GridLayoutManager(getActivity(), columns);
         mRrecyclerView.setLayoutManager(mLayoutManager);
         mFeedAdapter = new FeedAdapter(getFeedItemList());
         mRrecyclerView.setAdapter(mFeedAdapter);

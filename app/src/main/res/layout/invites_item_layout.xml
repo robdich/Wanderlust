@@ -1,66 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:clickable="true"
-    android:background="?android:attr/selectableItemBackground"
-    android:padding="@dimen/invite_padding">
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true">
 
-    <com.robdich.wanderlust.view.ShapeImageView
-        android:id="@+id/invite_photo"
-        android:layout_width="@dimen/invite_photo_size"
-        android:layout_height="@dimen/invite_photo_size"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_marginRight="16dp"
-        android:src="@drawable/image_leaf"
-        android:scaleType="centerCrop"/>
-
-    <com.robdich.wanderlust.view.ShapeImageView
-        android:id="@+id/invite_avatar"
-        android:layout_width="@dimen/invite_avatar_size"
-        android:layout_height="@dimen/invite_avatar_size"
-        android:layout_alignTop="@+id/invite_photo"
-        android:layout_alignLeft="@+id/invite_photo"
-        android:layout_marginTop="48dp"
-        android:layout_marginLeft="48dp"
-        android:src="@drawable/photo_rob"/>
-
-    <TextView
-        android:id="@+id/invite_details"
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/invite_photo"
-        android:layout_toRightOf="@+id/invite_photo"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="16dp"
-        android:text="@string/placeholder_invite_detail"
-        android:textSize="@dimen/text_size_caption"
-        android:textColor="@color/text_dark_gray"/>
+        android:background="@color/background_white"
+        android:padding="@dimen/invite_padding">
 
-    <TextView
-        android:id="@+id/invite_time"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/invite_details"
-        android:layout_alignLeft="@+id/invite_details"
-        android:text="@string/placeholder_text_time"
-        android:drawableLeft="@drawable/ic_time"
-        android:drawablePadding="@dimen/drawable_padding"
-        android:minWidth="@dimen/notification_time_width"
-        style="@style/TextCaption"/>
+        <com.robdich.wanderlust.view.ShapeImageView
+            android:id="@+id/invite_photo"
+            android:layout_width="@dimen/invite_photo_size"
+            android:layout_height="@dimen/invite_photo_size"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/image_leaf"
+            android:scaleType="centerCrop"/>
 
-    <TextView
-        android:id="@+id/invite_likes"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/invite_details"
-        android:layout_alignRight="@+id/invite_details"
-        android:text="@string/placeholder_text_likes"
-        android:drawableLeft="@drawable/ic_favorite"
-        android:drawablePadding="@dimen/drawable_padding"
-        style="@style/TextCaption"/>
+        <com.robdich.wanderlust.view.ShapeImageView
+            android:id="@+id/invite_avatar"
+            android:layout_width="@dimen/invite_avatar_size"
+            android:layout_height="@dimen/invite_avatar_size"
+            android:layout_alignTop="@+id/invite_photo"
+            android:layout_alignLeft="@+id/invite_photo"
+            android:layout_marginTop="48dp"
+            android:layout_marginLeft="48dp"
+            android:src="@drawable/photo_rob"/>
 
-</RelativeLayout>
+        <TextView
+            android:id="@+id/invite_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/invite_photo"
+            android:layout_toRightOf="@+id/invite_photo"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/placeholder_invite_detail"
+            android:textSize="@dimen/text_size_caption"
+            android:textColor="@color/text_dark_gray"/>
+
+        <TextView
+            android:id="@+id/invite_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/invite_details"
+            android:layout_alignLeft="@+id/invite_details"
+            android:text="@string/placeholder_text_time"
+            android:drawableLeft="@drawable/ic_time"
+            android:drawablePadding="@dimen/drawable_padding"
+            android:minWidth="@dimen/notification_time_width"
+            style="@style/TextCaption"/>
+
+        <TextView
+            android:id="@+id/invite_likes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/invite_details"
+            android:layout_alignRight="@+id/invite_details"
+            android:text="@string/placeholder_text_likes"
+            android:drawableLeft="@drawable/ic_favorite"
+            android:drawablePadding="@dimen/drawable_padding"
+            style="@style/TextCaption"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

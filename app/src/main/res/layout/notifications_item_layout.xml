@@ -1,81 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:clickable="true"
-    android:background="?android:attr/selectableItemBackground"
-    android:padding="@dimen/notification_padding">
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true">
 
-    <com.robdich.wanderlust.view.ShapeImageView
-        android:id="@+id/notification_avatar"
-        android:layout_width="@dimen/notification_avatar_size"
-        android:layout_height="@dimen/notification_avatar_size"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:src="@drawable/photo_rob"/>
-
-    <com.robdich.wanderlust.view.ShapeImageView
-        android:id="@+id/notification_image"
-        android:layout_width="@dimen/notification_image_size"
-        android:layout_height="@dimen/notification_image_size"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:src="@drawable/bg_bridge"
-        android:scaleType="centerCrop"/>
-
-    <TextView
-        android:id="@+id/notification_details"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/notification_avatar"
-        android:layout_toLeftOf="@+id/notification_image"
-        android:padding="8dp"
-        android:text="@string/placeholder_notification_detail"
-        android:textSize="@dimen/text_size_caption"
-        android:textColor="@color/text_dark_gray"/>
-
-    <com.robdich.wanderlust.layout.ClippedLinearLayout
-        android:id="@+id/notification_container"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/notification_details"
-        android:layout_alignLeft="@+id/notification_details"
-        android:orientation="horizontal"
-        android:visibility="gone"
-        android:padding="8dp"/>
+        android:background="@color/background_white"
+        android:padding="@dimen/notification_padding">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/notification_container"
-        android:layout_alignLeft="@+id/notification_details"
-        android:orientation="horizontal"
-        android:paddingTop="8dp"
-        android:paddingLeft="8dp"
-        android:paddingRight="8dp">
+        <com.robdich.wanderlust.view.ShapeImageView
+            android:id="@+id/notification_avatar"
+            android:layout_width="@dimen/notification_avatar_size"
+            android:layout_height="@dimen/notification_avatar_size"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/photo_rob"/>
 
-        <TextView
-            android:id="@+id/notification_likes"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/placeholder_text_likes"
-            android:drawableLeft="@drawable/ic_favorite"
-            android:drawablePadding="@dimen/drawable_padding"
-            android:minWidth="@dimen/notification_likes_width"
-            style="@style/TextCaption"/>
+        <com.robdich.wanderlust.view.ShapeImageView
+            android:id="@+id/notification_image"
+            android:layout_width="@dimen/notification_image_size"
+            android:layout_height="@dimen/notification_image_size"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/bg_bridge"
+            android:scaleType="centerCrop"/>
 
         <TextView
-            android:id="@+id/notification_time"
+            android:id="@+id/notification_details"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/placeholder_text_time"
-            android:drawableLeft="@drawable/ic_time"
-            android:drawablePadding="@dimen/drawable_padding"
-            android:minWidth="@dimen/notification_time_width"
-            style="@style/TextCaption"/>
+            android:layout_toRightOf="@+id/notification_avatar"
+            android:layout_toLeftOf="@+id/notification_image"
+            android:padding="8dp"
+            android:text="@string/placeholder_notification_detail"
+            android:textSize="@dimen/text_size_caption"
+            android:textColor="@color/text_dark_gray"/>
 
-    </LinearLayout>
+        <com.robdich.wanderlust.layout.ClippedLinearLayout
+            android:id="@+id/notification_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/notification_details"
+            android:layout_alignLeft="@+id/notification_details"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:padding="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/notification_container"
+            android:layout_alignLeft="@+id/notification_details"
+            android:orientation="horizontal"
+            android:paddingTop="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+
+            <TextView
+                android:id="@+id/notification_likes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/placeholder_text_likes"
+                android:drawableLeft="@drawable/ic_favorite"
+                android:drawablePadding="@dimen/drawable_padding"
+                android:minWidth="@dimen/notification_likes_width"
+                style="@style/TextCaption"/>
+
+            <TextView
+                android:id="@+id/notification_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/placeholder_text_time"
+                android:drawableLeft="@drawable/ic_time"
+                android:drawablePadding="@dimen/drawable_padding"
+                android:minWidth="@dimen/notification_time_width"
+                style="@style/TextCaption"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>
 
 
-</RelativeLayout>
+

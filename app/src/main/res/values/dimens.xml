@@ -63,6 +63,12 @@
     <dimen name="invite_photo_size">62dp</dimen>
     <dimen name="invite_avatar_size">22dp</dimen>
 
+    <dimen name="notifications_horizontal_padding">0dp</dimen>
+    <dimen name="notifications_vertical_padding">0dp</dimen>
+
+    <dimen name="invites_horizontal_padding">0dp</dimen>
+    <dimen name="invites_vertical_padding">0dp</dimen>
+
     <dimen name="drawable_padding">4dp</dimen>
 
 </resources>

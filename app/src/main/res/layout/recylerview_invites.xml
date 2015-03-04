@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<com.robdich.hideabletoolbar.view.ObserveableRecyclerView
+<android.support.v7.widget.RecyclerView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/recylerView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingTop="@dimen/notifications_vertical_padding"
-    android:paddingBottom="@dimen/notifications_vertical_padding"
-    android:paddingLeft="@dimen/notifications_horizontal_padding"
-    android:paddingRight="@dimen/notifications_horizontal_padding"
+    android:paddingTop="@dimen/invites_vertical_padding"
+    android:paddingBottom="@dimen/invites_vertical_padding"
+    android:paddingLeft="@dimen/invites_horizontal_padding"
+    android:paddingRight="@dimen/invites_horizontal_padding"
     android:scrollbars="vertical"
     android:scrollbarStyle="outsideOverlay"
     android:clipToPadding="false"/>
