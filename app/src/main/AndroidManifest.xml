@@ -20,7 +20,7 @@
 
         <activity
             android:name=".activities.InvitesActivity"
-            android:label="@string/activity_feed">
+            android:label="@string/activity_invites">
         </activity>
 
     </application>
