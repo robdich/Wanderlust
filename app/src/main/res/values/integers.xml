@@ -8,5 +8,6 @@
     <integer name="nav_profile_image_base_height">9</integer>
 
     <integer name="feed_grid_columns">1</integer>
+    <integer name="albums_grid_columns">2</integer>
     
 </resources>

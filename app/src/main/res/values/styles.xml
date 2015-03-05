@@ -70,6 +70,10 @@
         <item name="android:textColor">@color/text_secondary</item>
         <!--item name="android:textAlignment">viewStart</item-->
     </style>
+
+    <style name="TextCaption.Dark">
+        <item name="android:textColor">@color/text_secondary_inverse</item>
+    </style>
     
     <style name="Text"></style>    
     

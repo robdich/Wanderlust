@@ -22,29 +22,4 @@ public class InviteItem {
         this.time = time;
     }
 
-    public InviteItem setUserProfile(UserProfile user){
-        this.user = user;
-        return this;
-    }
-
-    public InviteItem setPostTitle(String postTitle){
-        this.postTitle = postTitle;
-        return this;
-    }
-
-    public InviteItem setPhoto(int photoResource){
-        this.photoResource = photoResource;
-        return this;
-    }
-
-    public InviteItem setLikesCount(int likes){
-        this.likesCount = likes;
-        return this;
-    }
-
-    public InviteItem setTime(String time){
-        this.time = time;
-        return this;
-    }
-
 }

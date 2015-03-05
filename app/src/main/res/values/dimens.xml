@@ -62,6 +62,9 @@
     <dimen name="invite_padding">16dp</dimen>
     <dimen name="invite_photo_size">62dp</dimen>
     <dimen name="invite_avatar_size">22dp</dimen>
+    <dimen name="invite_time_width">64dp</dimen>
+
+    <dimen name="album_item_height">180dp</dimen>
 
     <dimen name="notifications_horizontal_padding">0dp</dimen>
     <dimen name="notifications_vertical_padding">0dp</dimen>

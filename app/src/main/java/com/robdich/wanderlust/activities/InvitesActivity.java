@@ -38,5 +38,4 @@ public class InvitesActivity extends BaseNavDrawerActivity {
 		return super.onOptionsItemSelected(item);
 	}
 
-
 }

@@ -206,6 +206,9 @@ public class BaseNavDrawerActivity extends HideableToolbarActivity {
 			break;
 			
 		case DRAWER_ITEM_ALBUMS:
+            intent = new Intent(this, AlbumsActivity.class);
+            startActivity(intent);
+            finish();
 			break;
 
 		default:

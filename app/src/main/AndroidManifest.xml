@@ -23,6 +23,11 @@
             android:label="@string/activity_invites">
         </activity>
 
+        <activity
+            android:name=".activities.AlbumsActivity"
+            android:label="@string/activity_albums">
+        </activity>
+
     </application>
 
 </manifest>
