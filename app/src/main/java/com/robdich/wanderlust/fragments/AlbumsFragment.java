@@ -23,6 +23,13 @@ public class AlbumsFragment extends Fragment {
     private RecyclerView mRecyclerView;
     private GridLayoutManager mLayoutManager;
 
+    private static final int[] FOUR_COLUMNS_PATTERN = new int[]{
+            2, 1, 1,
+            1, 2, 1,
+            1, 1, 2,
+            1, 2, 1
+    };
+
     private static final String[] TITLES = new String[]{
             "Parts Unknown", "Strawberry Fields", "Local Tourist Destinations",
             "Summer Getaway", "Trips Abroad", "Gone Fishing",
@@ -46,11 +53,25 @@ public class AlbumsFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         final int columns = getResources().getInteger(R.integer.albums_grid_columns);
+        final int length = FOUR_COLUMNS_PATTERN.length;
         mLayoutManager = new GridLayoutManager(getActivity(), columns);
         mLayoutManager.setSpanSizeLookup(new GridLayoutManager.SpanSizeLookup() {
             @Override
             public int getSpanSize(int position) {
-                return position % 3 == 2 ? 2 : 1;
+
+                switch (columns){
+                    case 2:
+                        //Produces 1,1,2,1,1,2...
+                        return (position % 3 == 2 ? 2 : 1);
+                    case 3:
+                        //Produces 1,2,3,1,2,3...
+                        return (position % 3 + 1);
+                    case 4:
+                        //Produces a zigzag pattern
+                        return FOUR_COLUMNS_PATTERN[position % length];
+                }
+
+                return 1;
             }
         });
         mRecyclerView.setLayoutManager(mLayoutManager);
