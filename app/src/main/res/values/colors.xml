@@ -50,6 +50,8 @@
     <color name="divider_color">#e0e0e0</color>
     <color name="image_tint">#6000</color>
 
+    <color name="place_go_button">#43be42</color>
+
     <color name="gallery_settings_theme_dark">#00796B</color>
     <color name="gallery_settings_theme">#009688</color>
     <color name="gallery_settings_theme_light">#4DB6AC</color>

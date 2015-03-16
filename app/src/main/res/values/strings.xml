@@ -7,6 +7,7 @@
     
     <string name="activity_home">Activity</string>
     <string name="activity_invites">Invites</string>
+    <string name="activity_places">Places</string>
     <string name="activity_albums">Albums</string>
     
     <string name="drawer_close">Close navigation drawer</string>
@@ -26,6 +27,7 @@
     <string name="button_like">Like</string>
     <string name="button_comment">Comment</string>
     <string name="button_share">Share</string>
+    <string name="button_go">GO</string>
 
     <string name="username_sheldon">Sheldon Cooper</string>
     <string name="username_dave">Dave Grohl</string>

@@ -66,6 +66,9 @@
 
     <dimen name="album_item_height">180dp</dimen>
 
+    <dimen name="place_item_height">200dp</dimen>
+    <dimen name="place_button_width">72dp</dimen>
+
     <dimen name="notifications_horizontal_padding">0dp</dimen>
     <dimen name="notifications_vertical_padding">0dp</dimen>
 

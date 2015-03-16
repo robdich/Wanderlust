@@ -24,6 +24,11 @@
         </activity>
 
         <activity
+            android:name=".activities.PlacesActivity"
+            android:label="@string/activity_places">
+        </activity>
+
+        <activity
             android:name=".activities.AlbumsActivity"
             android:label="@string/activity_albums">
         </activity>

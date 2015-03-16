@@ -30,7 +30,7 @@ public class BaseNavDrawerActivity extends HideableToolbarActivity {
 
 	protected static final int DRAWER_ITEM_ACTIVITY = 0;
 	protected static final int DRAWER_ITEM_INVITES = 1;
-	protected static final int DRAWER_ITEM_TRAVELS = 2;
+	protected static final int DRAWER_ITEM_PLACES = 2;
 	protected static final int DRAWER_ITEM_ALBUMS = 3;
 	protected static final int DRAWER_ITEM_SETTINGS = 4;
 	protected static final int DRAWER_SEPARATOR = -1;
@@ -41,14 +41,14 @@ public class BaseNavDrawerActivity extends HideableToolbarActivity {
 	private static final int[] DRAWER_ITEM_ICON_RES = new int[]{
 		R.drawable.ic_activity,
 		R.drawable.ic_invite,
-		R.drawable.ic_travels,
+		R.drawable.ic_places,
 		R.drawable.ic_album,
 
 		R.drawable.ic_settings
 	};
 	
 	private static final String[] DRAWER_ITEM_TITLE = new String[]{
-		"Activity", "Invites", "Travels", "Albums", "Settings"
+		"Activity", "Invites", "Places", "Albums", "Settings"
 	};
 
 	@Override
@@ -108,7 +108,7 @@ public class BaseNavDrawerActivity extends HideableToolbarActivity {
 		
 		mDrawerItems.add(DRAWER_ITEM_ACTIVITY);
 		mDrawerItems.add(DRAWER_ITEM_INVITES);
-		mDrawerItems.add(DRAWER_ITEM_TRAVELS);
+		mDrawerItems.add(DRAWER_ITEM_PLACES);
 		mDrawerItems.add(DRAWER_ITEM_ALBUMS);
 		
 		mDrawerItems.add(DRAWER_SEPARATOR);
@@ -205,11 +205,17 @@ public class BaseNavDrawerActivity extends HideableToolbarActivity {
 			finish();
 			break;
 			
-		case DRAWER_ITEM_ALBUMS:
-            intent = new Intent(this, AlbumsActivity.class);
+		case DRAWER_ITEM_PLACES:
+            intent = new Intent(this, PlacesActivity.class);
             startActivity(intent);
             finish();
 			break;
+
+        case DRAWER_ITEM_ALBUMS:
+                intent = new Intent(this, AlbumsActivity.class);
+                startActivity(intent);
+                finish();
+                break;
 
 		default:
 			break;

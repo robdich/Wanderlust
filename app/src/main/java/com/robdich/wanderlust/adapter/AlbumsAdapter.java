@@ -67,4 +67,5 @@ public class AlbumsAdapter extends RecyclerView.Adapter<AlbumsAdapter.ViewHolder
     public int getItemCount() {
         return mAlbums.size();
     }
+
 }

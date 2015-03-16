@@ -13,8 +13,8 @@
         <include layout="@layout/toolbar_actionbar"/>
 
         <fragment
-            android:name="com.robdich.wanderlust.fragments.AlbumsFragment"
-            android:id="@+id/fragment_albums"
+            android:name="com.robdich.wanderlust.fragments.PlacesFragment"
+            android:id="@+id/fragment_places"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
 

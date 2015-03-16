@@ -150,7 +150,13 @@
     <style name="BorderlessButton">
         <item name="android:background">?android:attr/selectableItemBackground</item>
         <item name="android:textAppearance">@style/TextBody</item>
+    </style>
 
+    <style name="OpaqueBackgroundButton" parent="android:Widget.Holo.Button">
+        <item name="android:background">@android:drawable/btn_default</item>
+    </style>
+
+    <style name="PlacesGoButton" parent="OpaqueBackgroundButton">
     </style>
 
 </resources>
